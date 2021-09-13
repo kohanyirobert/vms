@@ -66,7 +66,7 @@ distros:
         - ' -- <wait>'
         - <enter><wait>
       iso_checksum: 8c5fc24894394035402f66f3824beb7234b757dd2b5531379cb310cedfdf0996
-      iso_url: 'http://cdimage.ubuntu.com/ubuntu/releases/18.04.5/release/ubuntu-18.04.5-server-amd64.iso'
+      iso_url: 'http://cdimage.ubuntu.com/ubuntu/releases/18.04/release/ubuntu-18.04.5-server-amd64.iso'
       preseed: |-
         choose-mirror-bin mirror/http/proxy string
         d-i base-installer/kernel/override-image string linux-server
@@ -125,7 +125,7 @@ distros:
                 endpoint: '{$ services.webhook_server_url $}'
                 level: DEBUG
       iso_checksum: 443511f6bf12402c12503733059269a2e10dec602916c0a75263e5d990f6bb93
-      iso_url: 'https://releases.ubuntu.com/20.04/ubuntu-20.04.1-live-server-amd64.iso'
+      iso_url: 'https://releases.ubuntu.com/20.04/ubuntu-20.04.3-live-server-amd64.iso'
       scripts_before:
         - nocloudinit
         - nowaitnetwork
@@ -136,7 +136,7 @@ distros:
     defaults:
       memory: 396
       guest_os_type: Debian_64
-    '10.6.0':
+    '10':
       boot_command:
         - '<esc><wait>'
         - 'install<wait>'
@@ -156,7 +156,7 @@ distros:
         - ' -- <wait>'
         - <enter><wait>
       iso_checksum: 2af8f43d4a7ab852151a7f630ba596572213e17d3579400b5648eba4cc974ed0
-      iso_url: 'https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-10.6.0-amd64-netinst.iso'
+      iso_url: 'https://cdimage.debian.org/mirror/cdimage/archive/10.10.0/amd64/iso-cd/debian-10.10.0-amd64-netinst.iso'
       preseed: |-
         choose-mirror-bin mirror/http/proxy string
         d-i apt-setup/cdrom/set-failed boolean false
@@ -214,7 +214,7 @@ variants:
     graphicscontroller: vboxvga
     keep_x: true
     scripts:
-      - '{$ args.distro $}/desktop'
+      - '{$ args.distro $}/{$ args.release $}/desktop'
   mininet:
     scripts:
       - mininet
