@@ -54,7 +54,7 @@ Vagrant boxes are released through Vagrant Cloud.
 ## Licenses
 
 ```text
-Copyright 2020, Kohányi Róbert (<kohanyi.robert@gmail.com>)
+Copyright 2020-2021, Kohányi Róbert (<kohanyi.robert@gmail.com>)
 Copyright 2012-2019, Chef Software, Inc. (<legal@chef.io>)
 Copyright 2011-2012, Tim Dysinger (<tim@dysinger.net>)
 
