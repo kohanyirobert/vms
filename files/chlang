@@ -1,0 +1,6 @@
+#!/bin/sh
+lang=${1:-us}
+ln -fsv /etc/default/keyboard.$lang /etc/default/keyboard
+ln -fsv /etc/default/console-setup.$lang /etc/default/console-setup
+setupcon
+loadkeys $lang
