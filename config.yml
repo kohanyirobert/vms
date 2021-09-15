@@ -204,10 +204,10 @@ variants:
       - '{$ args.distro $}/update'
       - virtualbox
       - common
-  base:
-    scripts_after:
       - setupcon
       - nomotd
+  base:
+    scripts_after: {}
   db:
     scripts:
       - postgres
