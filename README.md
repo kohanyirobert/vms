@@ -4,6 +4,8 @@ Automated Oracle VM VirtualBox Ubuntu build using Packer.
 
 ## Prerequisites
 
+*Note*: use these or newer versions for building images.
+
 - Packer 1.6.5
   - One of `xorriso`, `mkisofs`, `hdiutil` (normally found in macOS) or `oscdimg` (normally found in Windows as part of the [Windows ADK](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install)) is required by Packer
 - Oracle VM VirtualBox 6.1.14
